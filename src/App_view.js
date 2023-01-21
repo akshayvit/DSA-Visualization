@@ -1,33 +1,29 @@
 
-import GridLines from 'react-gridlines';
-import { AVLTree, BinarySearchTree, RedBlackTree, useBinarySearchTree,Trie,MaxHeap, useAVLTree, useRedBlackTree, useHeap, useTrie } from 'react-tree-vis';
-import { useState } from 'react';
 import { BST } from './bst';
 import { AVL } from './avl';
 import { TRIE } from './trie';
 import { RBT } from './rbt';
 import { HEAP } from './heap';
 
-export function App_view(props) {
+export function AppView(props) {
   
-
   
     const {type}=props;
     console.log(type);
-    if(type=="BST"){
+    if(type==="BST"){
          return <BST/>;
         }
-        else if(type=="AVL") {
+        else if(type==="AVL") {
          return   <AVL/>
         }
-        else if(type=="TRIE") {
+        else if(type==="TRIE") {
 
    return <TRIE/>
         }
-        else if(type=="RBT") {
+        else if(type==="RBT") {
            return  <RBT/>
         }
-        else if(type=="Heap") {
+        else if(type==="Heap") {
             return <HEAP/>
         }
 }
